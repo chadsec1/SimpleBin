@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>View Paste</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/view.css">
 </head>
 <body>
     <div class="container">
-        <h2>Paste</h2>
         <div class="paste content">
-            <p>Pasted at {{ created_at }}</p>
-            <pre><code>
-                {{ content }}
-            </code></pre>
+            <p id="date">Created at {{ created_at }}</p>
+            <pre><code>{{ content }}</code></pre>
         </div>
 
-        <a href="/">Create a new paste</a>
+        <a href="/" id="new_paste_btn2">Create a new paste</a>
     </div>
 </body>
 </html>
