@@ -4,6 +4,13 @@ This is a really simple self-hostable paste bin site
 
 I design this to be ultra simple, and lightweight. No logins, no bloated features, just straight to the point.
 
+<p align="center">
+  <img src="docs/screenshots/Screenshot_1.png" height="128">
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/Screenshot_2.png" height="128">
+</p>
 
 ## Installation
 Install requirements:
