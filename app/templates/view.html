@@ -7,8 +7,14 @@
 <body>
     <div class="container">
         <h2>Paste</h2>
-        <pre>{{ content }}</pre>
-        <a href="/">Create another</a>
+        <div class="paste content">
+            <p>Pasted at {{ created_at }}</p>
+            <pre><code>
+                {{ content }}
+            </code></pre>
+        </div>
+
+        <a href="/">Create a new paste</a>
     </div>
 </body>
 </html>
