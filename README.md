@@ -4,13 +4,9 @@ This is a really simple self-hostable paste bin site
 
 I design this to be ultra simple, and lightweight. No logins, no bloated features, just straight to the point.
 
-<p align="center">
-  <img src="docs/screenshots/Screenshot_1.png" height="128">
-</p>
+![Screenshot 1](https://github.com/chadsec1/SimpleBin/raw/main/docs/screenshots/Screenshot_1.png "Screenshot 1")
 
-<p align="center">
-  <img src="docs/screenshots/Screenshot_2.png" height="128">
-</p>
+![Screenshot 1](https://github.com/chadsec1/SimpleBin/raw/main/docs/screenshots/Screenshot_2.png "Screenshot 1")
 
 ## Installation
 Install requirements:
