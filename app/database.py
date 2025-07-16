@@ -16,9 +16,7 @@ def init_db():
             CREATE TABLE pastes (
                 id TEXT PRIMARY KEY,
                 content TEXT NOT NULL,
-                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                ip TEXT,
-                user_agent TEXT
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
         conn.commit()

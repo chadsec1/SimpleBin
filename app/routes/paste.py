@@ -8,8 +8,6 @@ import os
 router = APIRouter()
 templates = Jinja2Templates(directory="app/templates")
 
-os.makedirs("app/storage", exist_ok=True)
-
 @router.get("/", response_class=HTMLResponse)
 async def form(request: Request):
     return templates.TemplateResponse("form.html", {"request": request})
@@ -28,7 +26,7 @@ async def submit(request: Request, content: str = Form(...)):
 @router.get("/paste/{paste_id}", response_class=HTMLResponse)
 async def read_paste(request: Request, paste_id: str):
     db = get_db()
-    row = db.execute("SELECT content FROM pastes WHERE id = ?", (paste_id,)).fetchone()
+    row = db.execute("SELECT content, created_at FROM pastes WHERE id = ?", (paste_id,)).fetchone()
     if not row:
         return HTMLResponse("Paste not found", status_code=404)
-    return templates.TemplateResponse("view.html", {"request": request, "content": row["content"]})
+    return templates.TemplateResponse("view.html", {"request": request, "content": row["content"], "created_at": row["created_at"]})
