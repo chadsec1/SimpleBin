@@ -21,3 +21,5 @@ python3 run.py
 ```
 
 The server will be exposed on `127.0.0.1:8000`
+
+DO NOT EXPOSE IT TO THE INTERNET! put it behind a web server first.
