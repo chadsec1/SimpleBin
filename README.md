@@ -1,6 +1,6 @@
 ## SimpleBin
 
-This is a really simple self-hostable paste bin site
+This is a really simple self-hostable paste bin site. It's a toy project, don't use it for production.
 
 I design this to be ultra simple, and lightweight. No logins, no bloated features, just straight to the point.
 It's WIP, don't use this for production :)
